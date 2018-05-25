@@ -12,9 +12,10 @@
             </div>
         
         <div class="col-md-6">
+          <h1>Quotes</h1>
             <ul>
                 <div *ngFor = "let quote of quotes; let i = 'index'" style="list-style: none"><br>
-                  <li>"{{quote.quoteDesc}}"</li>
+                  <li style="color:#056b5b;">"{{quote.quoteDesc}}"</li>
                   <br>
                   <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button><br>
                 <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
