@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+
+
+  <ul>
+    <div *ngFor = 'let quote of quotes' style="list-style: none">
+      <li>{{quote.quoteDesc}}</li>
+    <app-quote-details [quote]='quote'></app-quote-details>
+    </div>
+  </ul>
+  
