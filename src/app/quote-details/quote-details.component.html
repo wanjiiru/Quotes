@@ -4,11 +4,9 @@
         <p> submitted by {{quote.publisher}} {{quote.date |dateCount}} days ago</p>
         <div class="row">
         <button  class="btn btn-info btn-lg"  (click)=submitLike(quote)>
-        <span class="glyphicon glyphicon-thumbs-up"></span> likes</button>
-        <br>
-        <p>{{quote.likes}}</p>
-        </div>
+        <span class="glyphicon glyphicon-thumbs-up"></span> likes</button>  <p style="text-align: right">{{quote.likes}}</p>
 
+        </div>
         <button class="btn btn-danger" (click) = 'quoteComplete(true)'> Delete </button>
 
         
