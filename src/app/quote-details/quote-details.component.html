@@ -1,4 +1,7 @@
 <p>Author : {{quote.author}}</p>
 <p>submitted by {{quote.publisher}}</p>
-<p>{{quote.date}}</p>
+<p> submitted by {{quote.publisher}} {{quote.date |date}} ago</p>
+
+<button class="btn btn-danger" (click) = 'quoteComplete(true)'> Delete </button>
+
 
