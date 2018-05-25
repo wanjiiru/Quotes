@@ -1,4 +1,9 @@
 export class Quote {
-    constructor(public id:number, public author:string,public publisher:string,public quoteDesc:string,public date:Date){}
-
+    public showDetails:boolean;
+    constructor(public id:number, public author:string,public publisher:string,public quoteDesc:string,public date:Date){
+    this.showDetails=false
+    
 }
+}
+
+

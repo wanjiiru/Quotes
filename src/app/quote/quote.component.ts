@@ -10,8 +10,14 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
   title = "QUOTES!"
   quotes =[
+    new Quote(1, 'Mandera','Liz','hello world',new Date(2018,5,25,) ),
     new Quote(1, 'Mandera','Liz','hello world',new Date(2018,5,25,) )
+
   ]
+
+  toogleDetails(index){
+    this.quotes[index].showDetails = !this.quotes[index].showDetails;
+}
 
   constructor() { }
 

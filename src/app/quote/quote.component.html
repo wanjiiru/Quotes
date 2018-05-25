@@ -6,9 +6,11 @@
 
 
   <ul>
-    <div *ngFor = 'let quote of quotes' style="list-style: none">
+    <div *ngFor = 'let quote of quotes; let i = index' style="list-style: none">
       <li>{{quote.quoteDesc}}</li>
-    <app-quote-details [quote]='quote'></app-quote-details>
+      <br>
+      <button  (click)='toogleDetails(i)'>Details</button>
+    <app-quote-details *ngIf="quote.showDetails" [quote]='quote'></app-quote-details>
     </div>
   </ul>
   
