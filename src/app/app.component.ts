@@ -7,8 +7,4 @@ import {Quote} from './quote'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "QUOTES!"
-  quotes =[
-    new Quote(1, 'Mandera','Liz','hello world',new Date(2018,5,25,) )
-  ]
 }

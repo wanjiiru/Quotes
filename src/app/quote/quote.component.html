@@ -1,28 +1,33 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title }}
-  </h1>
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-md-6">
-          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-      </div>
-  
-  <div class="col-md-6">
-      <ul>
-          <div *ngFor = 'let quote of quotes; let i = index' style="list-style: none">
-            <li>"{{quote.quoteDesc}}"</li>
-            <br>
-            <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
-          <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
-          </div>
-        </ul>
-  
-  </div>
-  </div>
-  
-  </div>
+<div class="container">
+
+    <div style="text-align:center">
+        <h1>
+          {{ title }}
+        </h1>
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-md-6">
+                <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+            </div>
+        
+        <div class="col-md-6">
+            <ul>
+                <div *ngFor = "let quote of quotes; let i = 'index'" style="list-style: none"><br>
+                  <li>"{{quote.quoteDesc}}"</li>
+                  <br>
+                  <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button><br>
+                <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+                </div>
+              </ul>
+        
+        </div>
+        </div>
+        
+        </div>
+
+</div>
+
   
   
   

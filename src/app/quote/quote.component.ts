@@ -11,11 +11,10 @@ export class QuoteComponent implements OnInit {
   title = "QUOTES!"
   quotes =[
     new Quote(1, 'Mandera','Liz','Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do'
-    ,new Date(2018,5,25,) ),
-    new Quote(1, 'Mandera','Liz','  Challenges are what make life interesting and overcoming them is what makes life meaningful',new Date(2018,5,25,) )
+    ,new Date(2018,5,25,) ,0,0),
+    new Quote(2, 'Mandera','Liz','  Challenges are what make life interesting and overcoming them is what makes life meaningful',new Date(2018,5,25,),0,0 )
 
-  ]
-
+  ];
 
 
 addNewQuote(quote){
