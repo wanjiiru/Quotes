@@ -18,7 +18,7 @@ export class QuoteDetailsComponent implements OnInit {
 
 
   submitUnlike(quote){
-    quote.likes= quote.likes-1
+    quote.dislikes= quote.dislikes+1
   }
 
 

@@ -8,17 +8,17 @@
 
         <div class="row">
         <button  class="btn btn-info btn-lg"  (click)=submitLike(quote)>
-        <span class="glyphicon glyphicon-thumbs-up"></span> likes</button>  <p style="text-align: right">{{quote.likes}}</p>
-        
+        <span class="glyphicon glyphicon-thumbs-up"></span> likes</button>  <p>{{quote.likes}}</p>
+
 
         </div>
 
 
         <div class="row">
                 <button  class="btn btn-info btn-lg"  (click)=submitUnlike(quote)>
-                <span class="glyphicon glyphicon-thumbs-up"></span> dislikes</button>  <p style="text-align: right">{{quote.dislikes}}</p>
-                
-        
+                <span class="glyphicon glyphicon-thumbs-down">
+
+                </span> dislikes</button> <p>{{quote.dislikes}}</p>
                 </div>
         <button class="btn btn-danger" (click) = 'quoteComplete(true)'> Delete </button>
 
