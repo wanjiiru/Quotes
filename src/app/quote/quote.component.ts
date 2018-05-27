@@ -8,7 +8,7 @@ import {Quote} from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  title = "QUOTES!"
+  title = "QUOTES BY ANGULAR"
   quotes =[
     new Quote(1, 'Mandera','Liz','Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do'
     ,new Date(2018,5,25,) ,0,0),
