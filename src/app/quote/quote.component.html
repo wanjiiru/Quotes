@@ -1,10 +1,10 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
 
     <div style="text-align:center">
         <h1>
           {{ title }}
         </h1>
+        </div>
         <div class="jumbotron">
           <div class="row">
             <div class="col-md-6">
@@ -21,13 +21,10 @@
                 <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
                 </div>
               </ul>
-        
         </div>
         </div>
-        
         </div>
 
-</div>
 </div>
 
   
