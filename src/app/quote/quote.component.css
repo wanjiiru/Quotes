@@ -3,3 +3,20 @@ li{
     font-style: italic;
     
 }
+
+
+
+.container{
+    background: white;
+}
+
+
+h1{
+    color:#056b5b;
+}
+
+
+
+.jumbotron{
+    padding-left: 0;
+}
