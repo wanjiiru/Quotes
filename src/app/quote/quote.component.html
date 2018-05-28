@@ -23,6 +23,7 @@
                     <button  class="btn btn-info btn-lg"  (click)=submitUnlike(quote)>
                     <span class="glyphicon glyphicon-thumbs-down"></span> Downvotes</button><br><br> <p style="text-align: center">{{quote.dislikes}}</p>
                     <br>
+                    <br>
                   <button class="btn btn-primary"  (click)='toogleDetails(i)'>Details</button><br>
                 <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
                 </div>
