@@ -12,14 +12,14 @@ export class QuoteDetailsComponent implements OnInit {
   @Output() isComplete= new EventEmitter<boolean>();
 
 
-  submitLike(quote){
-    quote.likes=quote.likes+1
-  }
+  // submitLike(quote){
+  //   quote.likes=quote.likes+1
+  // }
 
 
-  submitUnlike(quote){
-    quote.dislikes= quote.dislikes+1
-  }
+  // submitUnlike(quote){
+  //   quote.dislikes= quote.dislikes+1
+  // }
 
 
 

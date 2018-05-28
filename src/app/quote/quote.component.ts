@@ -17,6 +17,18 @@ export class QuoteComponent implements OnInit {
   ];
 
 
+
+  submitLike(quote){
+    quote.likes=quote.likes+1
+  }
+
+
+  submitUnlike(quote){
+    quote.dislikes= quote.dislikes+1
+  }
+
+
+
 addNewQuote(quote){
   let quoteLength = this.quotes.length;
   quote.id = quoteLength+1;

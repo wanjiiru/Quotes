@@ -17,6 +17,25 @@
                 <div *ngFor = "let quote of quotes; let i = 'index'" style="list-style: none"><br>
                   <li style="color:#056b5b;">"{{quote.quoteDesc}}"</li>
                   <br>
+                  <br>
+
+                  <!-- <div class="row"> -->
+                    <button  class="btn btn-info btn-lg"  (click)=submitLike(quote)>
+                    <span class="glyphicon glyphicon-thumbs-up"></span> likes</button> <br><br> <p>{{quote.likes}}</p>
+            
+            
+                    <!-- </div> -->
+                    <br>
+
+
+
+                  <!-- <div class="row"> -->
+                    <button  class="btn btn-info btn-lg"  (click)=submitUnlike(quote)>
+                    <span class="glyphicon glyphicon-thumbs-down">
+    
+                    </span> dislikes</button> <p>{{quote.dislikes}}</p>
+                    <!-- </div> -->
+                    <br>
                   <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button><br>
                 <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
                 </div>
