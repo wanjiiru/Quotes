@@ -18,4 +18,7 @@ No Known bugs so far
 ## Further help
 Contact me for any comments, reviews or advice.
 
+##Deployed site link
+https://wanjiiru.github.io/Quotes/Quotes/
+
 
