@@ -8,6 +8,7 @@ import {Quote} from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+  public maxCount =0;
   title = "QUOTES BY ANGULAR"
   quotes =[
     new Quote(1, 'Mandera','Liz','Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do'
@@ -19,9 +20,14 @@ export class QuoteComponent implements OnInit {
 
 
 
-  submitLike(quote){
-    quote.likes=quote.likes+1
+  submitLike(quote,index){
+    quote.likes=quote.likes+1;
+    // this.addNewQ(quote);
+    if(quote.likes>this.maxCount) this.maxCount=quote.likes;
+    else if(quote.likes<=this.maxCount) console.log(this.maxCount);
   }
+
+
 
 
   submitUnlike(quote){
@@ -30,12 +36,12 @@ export class QuoteComponent implements OnInit {
 
 
 
-addNewQuote(quote){
-  let quoteLength = this.quotes.length;
-  quote.id = quoteLength+1;
-  quote.completeDate = new Date(quote.completeDate)
-  this.quotes.push(quote);
-}
+  addNewQuot(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote);
+  }
 
   completeQuote(isComplete,index){
     if(isComplete){
